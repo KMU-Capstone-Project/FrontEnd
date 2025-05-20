@@ -11,16 +11,14 @@ import MyPage from './pages/myPage/myPage';
 import MainPage from './pages/mainPage/mainPage';
 import ChatPage from './pages/chatPage/chatPage';
 import ReviewPage from './pages/reviewPage/reviewPage'; // ✅ 리뷰 페이지 import
-import SellListPage from './pages/sellList/sellList'; // ✅ 판매내역 페이지 import 추가
+import SellListPage from './pages/sellList/sellList'; // ✅ 판매내역 페이지 import
+import SizeGuide from './pages/sizeGuide/sizeGuide';
 
 function App() {
   return (
     <Router>
       <Routes>
-        {/* 기본 경로 → 메인페이지 */}
         <Route path="/" element={<MainPage />} />
-
-        {/* 개별 경로들 */}
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/find-account" element={<FindAccount />} />
@@ -29,7 +27,8 @@ function App() {
         <Route path="/mainpage" element={<MainPage />} />
         <Route path="/chat" element={<ChatPage />} />
         <Route path="/reviews/*" element={<ReviewPage />} />
-        <Route path="/sellpage/*" element={<SellListPage />} /> {/* ✅ 판매내역 라우팅 */}
+        <Route path="/sellpage/*" element={<SellListPage />} />
+        <Route path="/size-guide" element={<SizeGuide />} />
       </Routes>
     </Router>
   );

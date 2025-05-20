@@ -163,3 +163,23 @@
   border-radius: 12px;
   cursor: pointer;
 }
+
+.write-review-button-box {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.write-review-button {
+  background-color: #fae100;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.write-review-button:hover {
+  background-color: #000;
+}

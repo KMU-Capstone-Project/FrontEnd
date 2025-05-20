@@ -1,7 +1,7 @@
 // src/pages/login/findPassword.js
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../../css/login.css';
+import '../../css/login/login.css';
 
 function FindPassword() {
   const [name, setName] = useState('');

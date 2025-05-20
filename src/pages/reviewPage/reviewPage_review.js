@@ -1,5 +1,6 @@
 // src/pages/reviewPage/reviewPage_review.js
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../../css/reviewPage/reviewPage.css';
 
 const reviewImages = [
@@ -15,6 +16,7 @@ const reviewImages = [
 
 function ReviewPageReview() {
   const [visibleCount, setVisibleCount] = useState(4);
+  const navigate = useNavigate();
 
   const handleLoadMore = () => {
     setVisibleCount(prev => prev + 4);
@@ -47,6 +49,12 @@ function ReviewPageReview() {
             {reviewImages.length - visibleCount}개 더보기
           </button>
         )}
+        {/* 대여 후기 작성하기 버튼 */}
+        <div className="write-review-button-box">
+          <button className="write-review-button" onClick={() => navigate('/write-review')}>
+            대여 후기 작성하기
+          </button>
+        </div>
       </div>
 
       <div className="review-item">

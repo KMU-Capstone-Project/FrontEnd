@@ -1,7 +1,7 @@
 // src/pages/login/findAccount.js
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // ✅ 추가
-import '../../css/login.css';
+import '../../css/login/login.css';
 
 function FindAccount() {
   const [nickname, setNickname] = useState('');

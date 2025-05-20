@@ -14,6 +14,10 @@ function MyPageCategory() {
     navigate('/reviews');
   };
 
+  const handleSizeGuideClick = () => {
+    navigate('/size-guide');
+  };
+
   return (
     <div className="mypage-category">
       <div className="dropdown-wrapper">
@@ -70,7 +74,7 @@ function MyPageCategory() {
       <div className="category-menu">
         <span>커뮤니티</span>
         <span>대여 절차 안내</span>
-        <span>사이즈 가이드</span>
+        <span onClick={handleSizeGuideClick} style={{ cursor: 'pointer' }}>사이즈 가이드</span>
         <span onClick={handleReviewClick} style={{ cursor: 'pointer' }}>
           후기 모아보기
         </span>

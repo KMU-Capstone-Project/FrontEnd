@@ -1,7 +1,7 @@
 // src/pages/login/login.js
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom'; // ✅ 추가
-import '../../css/login.css';
+import '../../css/login/login.css';
 
 function Login() {
   const [id, setId] = useState('');
